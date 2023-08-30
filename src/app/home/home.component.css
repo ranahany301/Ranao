@@ -1,0 +1,74 @@
+.home{
+    margin-top: 2rem;
+}
+
+.image{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+img{
+        width: 200px;
+        height:  200px;
+}
+.col-md-4{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+card{
+    border: 1px solid rgb(160, 6, 6);
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    padding-top: 10px;
+    transition: 5s;
+}
+.content h3{
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: serif;
+}
+.content p{
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+ .content .price{
+    color: rgb(143, 14, 14);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.butn{
+    display: flex;
+    justify-content: center;
+}
+span {
+    display: flex;
+    justify-content: center;
+}
+.card:hover:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+.my-1 {
+    font-style: italic;
+    font-size: larger;
+    color: rgb(117, 6, 6);
+    font-family: sans-serif;
+}
+.from-control {
+    display: flex;
+    background-color: rgb(122, 5, 11);
+    font-size: larger;
+    font-style: italic;
+    color: white;
+}
+.container {
+    
+}

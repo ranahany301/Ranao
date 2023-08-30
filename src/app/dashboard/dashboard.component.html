@@ -1,0 +1,21 @@
+<table class="table table-striped thead-light">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col" colspan="2"> Action </th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of productArr">
+      <tr>
+        <th scope="row"> <img [src]="item.image"> </th>
+        <td>{{item.title}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.price}}</td>
+        <td><button type="button" class="btn btn-success">Update</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteProduct(item.id)" >Delete</button></td>
+      </tr>
+    </tbody>
+  </table>

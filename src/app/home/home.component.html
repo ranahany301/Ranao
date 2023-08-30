@@ -1,0 +1,31 @@
+<div class="Container">
+<div class="my-3 w-25">
+<label for="" class="my-1">Categories :</label>
+<select class="from-control">
+    <option value="all" selected>All</option>
+    <option value="{{option}}" *ngFor="let option of ">{{option}}</option>
+</select>
+</div>
+</div> 
+<div class="container">
+    <div class="row">
+      <div class= "col-md-4" *ngFor="let item of productArr">
+         <div class="card">
+            <div class="test">
+            <div class="image">
+                <img [src]="item.image" alt=""/>
+            </div>
+            <div class="content">
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+                <span class="price"> <strong> Price: </strong> {{item.price}}$</span>
+            </div>
+            </div>
+            <div class="butn">
+                <button class="btn btn-primary"> Add To Cart</button>
+                <button class="btn btn-danger" (click)="deleteProduct(item.id)">delete</button>
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
